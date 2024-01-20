@@ -1,0 +1,122 @@
+[
+  {
+    "include": "~/.config/waybar/custom_modules/modules",
+    "layer": "bottom",
+    "height": 30,
+    "margin-top": 0,
+    "margin-left": 0,
+    "margin-bottom": 0,
+    "margin-right": 0,
+    "spacing": 0,
+    "output": ["DP-1"],
+
+    "modules-left": [
+      "custom/bottomLine",
+      "custom/ParallelogramLeft",
+      "custom/launcher",
+      "hyprland/window",
+      "custom/ParallelogramRight"
+    ],
+
+    "modules-center": [
+      "custom/backUp",
+      "custom/bottomLine",
+      "custom/ParallelogramLeft",
+      "clock",
+      "custom/ParallelogramRight",
+      "custom/Spacer"
+    ],
+
+    "modules-right": [
+      "custom/backUp",
+      "custom/bottomLine",
+      "custom/ParallelogramLeft",
+      "tray",
+      "custom/clipboard",
+      "network",
+      "pulseaudio",
+      "custom/notification",
+      "custom/power-menu",
+      "custom/ParallelogramRight",
+      "custom/smallSpacer"
+    ],
+
+    "hyprland/window": {
+      "max-length": 60,
+      "tooltip": false
+    },
+
+    "custom/notification": {
+      "tooltip": true,
+      "format": "{icon}",
+      "format-icons": {
+            "notification": "<span foreground='red'><small><sup>⬤</sup></small></span>",
+            "none": " ",
+            "dnd-notification": "<span foreground='red'><small><sup>⬤</sup></small></span>",
+            "dnd-none": " "
+      },
+      "return-type": "json",
+      "exec": "sleep 0.1 && swaync-client -swb",
+      "on-click": "sleep 0.1 && swaync-client -t -sw",
+      "on-click-right": "sleep 0.1 && swaync-client -d -sw",
+      "escape": true
+    },
+
+    "clock": {
+      "format": "<b> {:%H:%M:%OS - %a %d.%m.%Y  }</b>",
+      "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
+      "interval": 1
+    }
+  },
+  {
+      "include": "~/.config/waybar/custom_modules/modules",
+      "layer": "bottom",
+      "height": 30,
+      "margin-top": 0,
+      "margin-left": 0,
+      "margin-bottom": 0,
+      "margin-right": 0,
+      "spacing": 0,
+      "output": ["HDMI-A-1", "DP-3", "DP-2"],
+
+      "modules-left": [
+        "custom/bottomLine",
+        "custom/ParallelogramLeft",
+        "custom/launcher",
+        "hyprland/window",
+        "custom/ParallelogramRight"
+      ],
+
+      "modules-center": [
+        "custom/backUp",
+        "custom/bottomLine",
+        "custom/ParallelogramLeft",
+        "clock",
+        "custom/ParallelogramRight",
+        "custom/Spacer"
+      ],
+
+      "modules-right": [
+        "custom/backUp",
+        "custom/bottomLine",
+        "custom/ParallelogramLeft",
+        "network",
+        "pulseaudio",
+        "tray",
+        "custom/ParallelogramRight",
+        "custom/smallSpacer"
+      ],
+
+      "hyprland/window": {
+        "max-length": 80,
+        "tooltip": false
+      },
+
+      "clock": {
+        "format": "<b> {:%H:%M:%OS}</b>",
+        "format-alt": "<b> {:%a %d.%m.%Y}</b>",
+        "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
+        "interval": 1
+      }
+  }
+]

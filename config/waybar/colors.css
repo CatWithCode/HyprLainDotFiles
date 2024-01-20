@@ -1,0 +1,15 @@
+/*
+*
+* Catppuccin Frappe palette
+* Maintainer: rubyowo
+*
+*/
+
+@define-color base          rgba(76, 77, 171, 1);
+@define-color transparent   rgba(0, 0, 0, 0);
+@define-color black         rgba(0, 0, 0, 1);
+
+@define-color site          rgba(231, 154, 33, 1);
+@define-color level         rgba(184, 183, 125, 1);
+@define-color subtext1 #b5bfe2;
+

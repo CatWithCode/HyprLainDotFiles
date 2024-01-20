@@ -1,0 +1,81 @@
+/* Colors: */
+@import "colors.css";
+
+/* Base Config: */
+* {
+  font-family:   "OCR A";
+  font-size:     15px;
+  box-shadow:    none;
+  text-shadow:   none;
+  transition-duration: 0s;
+}
+
+/* Waybar Settings: */
+window#waybar {
+  background: linear-gradient(180deg, @base 30%, @black 31%);
+}
+
+/* Keeping Box Color and fixing Spacing: */
+#custom-launcher,
+#window,
+#clock,
+#tray,
+#custom-clipboard,
+#network,
+#pulseaudio,
+#custom-notification,
+#custom-power-menu
+{
+   background-color: @base;
+   padding: 0px 5px 0px 5px;
+}
+
+
+/* Linux Logo: */
+#custom-launcher {
+  color: @site
+}
+
+/* Line on the Bottom: */
+/* \_/ */
+#custom-bottomLine {
+  background: linear-gradient(180deg, @black 70%, @base 30%);
+  /* border-bottom:  10px solid @base; */
+  min-width: 30px;
+}
+
+/* Line that goes back to the Top: */
+/* -\_ */
+#custom-backUp {
+  background: linear-gradient(45deg, @black 34%, @base 34%, @base 64%, @black 64%);
+  min-width: 30px;
+}
+
+/* Left and Right Sides of Boxes: */
+/* /= */
+#custom-ParallelogramLeft {
+background: linear-gradient(140deg, @black 37%, @base 38%);
+min-width: 30px;
+}
+
+/* =/ */
+#custom-ParallelogramRight {
+  background: linear-gradient(140deg, @base 62%, @black 61%);
+  min-width: 30px;
+}
+
+/* Keeps evething Centerd with the Styling: */
+#custom-Spacer {
+  /* Every px that is not the same with the left SIde needs to be added to this;
+    ---
+    bottomLine [30 px] + 
+    backUp [30 px] 
+    = 60 px
+  */
+  min-width: 60px;
+}
+
+/* Small Spacer to make things look better: */
+#custom-smallSpacer {
+  min-width: 30px;
+}

@@ -1,0 +1,74 @@
+{
+  "custom/launcher": {
+    "format": "     ",
+    "on-click": "sleep 0.1 && wofi --show drun"
+  },
+
+  "custom/power-menu": {
+    "format": " ⏻",
+    "on-click": " sleep 0.1 && bash ~/.config/waybar/scripts/power-menu/powermenu.sh &"
+  },
+
+  "custom/clipboard": {
+    "format": " 📋 ",
+    "interval": "once",
+    "return-type": "json",
+    "on-click": "sleep 0.1 && clipman pick -t rofi --tool-args=\"-yoffset 35 -location 3\"",
+    //"on-click": "sleep 0.1 && cliphist list | rofi -yoffset 35 -location 3 -dmenu | cliphist decode | wl-copy",
+    "on-click-right": "sleep 0.1 && clipman clear --all",
+    //"on-click-right": "sleep 0.1 && cliphist wipe",
+    "signal": 9
+  },
+
+  "pulseaudio": {
+    //"format": "<b> {volume}</b>",
+    "format": "<b> 🎧 </b>",
+    "format-bluetooth": "<b>󰂳-󰗾 {volume}</b>",
+    "tooltip": false,
+    "format-muted": " MUTE",
+    "format-bluetooth-muted": "<b>󰂳- MUTE</b>",
+    "on-click": "sleep 0.1 && pavucontrol",
+    "on-click-right": "sleep 0.1 && wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+    //DAC/AMP:
+    "on-scroll-up": "",
+    "on-scroll-down": "",
+    //Fix 100% Volume
+    "on-click-middle": "sleep 0.1 && wpctl set-volume @DEFAULT_AUDIO_SINK@ 1"
+  },
+  
+  "network": {
+    "format-wifi": "<b>󰤨 {essid}</b>",
+    "format-ethernet": "🌐",
+    "format-disconnected": "<b> 󰈂 </b>"
+  },
+
+  "tray": {
+    "icon-size": 20,
+    "spacing": 4
+  },
+
+  //Styling:
+  "custom/backUp": {
+    "format": "​"
+  },
+
+  "custom/bottomLine": {
+    "format": "​"
+  },
+
+  "custom/ParallelogramLeft": {
+    "format": "​"
+  },
+
+  "custom/ParallelogramRight": {
+    "format": "​"
+  },
+
+  "custom/Spacer": {
+    "format": "​"
+  },
+
+  "custom/smallSpacer": {
+    "format": "​"
+  }
+}
