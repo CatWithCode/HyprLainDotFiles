@@ -45,11 +45,7 @@ xdg-desktop-portal-hyprland
 
 swayidle
 
-libcap-progs
-
 mpvpaper
-
-swww
 
 swaylock
 
