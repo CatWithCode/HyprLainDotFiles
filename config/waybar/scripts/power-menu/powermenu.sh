@@ -69,16 +69,16 @@ case ${chosen} in
 		play '~/.config/hypr/Files/Audio/SFX/Shutdown.wav' & run_cmd --shutdown
         ;;
     $reboot)
-		play '~/.config/sway/Files/Audio/SFX/Shutdown.wav' & run_cmd --reboot
+		play '~/.config/hypr/Files/Audio/SFX/Shutdown.wav' & run_cmd --reboot
         ;;
     $lock)
-		sh ~/.config/sway/Scripts/Sleeper/Lock-Loader.sh
+		sh ~/.config/hypr/Scripts/Sleeper/Lock-Loader.sh
         ;;
     $suspend)
 		run_cmd --suspend
         ;;
     $logout)
-		play '~/.config/sway/Files/Audio/SFX/Shutdown.wav' && sway exit #run_cmd --logout
+		play '~/.config/hypr/Files/Audio/SFX/Shutdown.wav' && hyprctl exit #run_cmd --logout
         ;;
 esac
 
