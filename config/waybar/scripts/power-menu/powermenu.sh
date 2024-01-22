@@ -78,7 +78,7 @@ case ${chosen} in
 		run_cmd --suspend
         ;;
     $logout)
-		play '~/.config/hypr/Files/Audio/SFX/Shutdown.wav' && hyprctl exit #run_cmd --logout
+		play '~/.config/hypr/Files/Audio/SFX/Shutdown.wav' && hyprctl dispatch exit #run_cmd --logout
         ;;
 esac
 
