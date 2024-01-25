@@ -9,6 +9,8 @@
 
 These are my first public dotfiles. I made a design that is heavily inspired by the video game Serial Experiment Lain. This project uses some publicly available scripts and configurations from others for some functions and design elements, and you can find links to them at the bottom of the readme.
 
+For network configuration, use the system tools in Terminal, Yast or install plasma5-nm and use KDE settings for configuration.
+
 # Main programs:
 
 - Waybar
