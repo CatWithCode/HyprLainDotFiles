@@ -37,9 +37,9 @@
   },
   
   "network": {
-    "format-wifi": "<b>󰤨 {essid}</b>",
+    "format-wifi": "<b>📶 {essid}</b>",
     "format-ethernet": "🌐",
-    "format-disconnected": "<b> 󰈂 </b>"
+    "format-disconnected": "<b> ⚠️ </b>"
   },
 
   "tray": {
